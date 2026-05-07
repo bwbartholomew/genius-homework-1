@@ -1,0 +1,145 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v51-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v51-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* basic color  */
+:root{
+    --color--brand:#2B7FFF;
+    --color--brand--dark: #011C44;
+    --color--white: #FFFFFF;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+ul{
+    list-style-type: none;
+}
+/* main section */
+
+.hero-title{
+    color: var(--color--brand);
+    font-family: 'Play', sans-serif;
+     font-weight: 700;
+    font-size: 140px;
+    line-height: 0.8;
+    text-align: left;
+}
+h1, h2{
+    font-family: 'Play';
+}
+.main-button{
+    color:var(--color--white);
+    background-color: var(--color--brand);
+    font-weight: 600;
+border-radius: 32px;
+   font-size: 18px;
+   border: 2px solid var(--color--brand);
+   cursor: pointer;
+}
+.main-button:hover{
+    color: var(--color--brand--dark);
+    background-color: transparent;
+}
+.advice{
+    font-size: 12px;
+}
+.cosmetics{
+    font-size: 18px;
+}
+/* section information */
+.beautyzone {
+    font-weight: 600;
+}
+p{
+    font-size: 22px;
+    color: var(--color--brand--dark);
+}
+/* all section */
+.section-title .accent {
+    color: var(--color--brand);
+}
+/* section title */
+.section-title{
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+/* whywe section */
+.article-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* procedures section */
+.procedures-text{
+    color: var(--color--white);
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+/* nav */
+.link{
+    color: var(--color--brand--dark);
+    text-decoration: none;
+}
+.link:hover{
+   color: var(--color--brand);
+   text-decoration: none;
+}
+.link2{
+    color:var(--color--white);
+    font-size: 16px;
+    text-decoration: none;
+}
+.address-link{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+.adress-copyright{
+    font-size: 13px;
+    color: #747272;
+    font-style: normal;
+}
