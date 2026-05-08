@@ -57,6 +57,10 @@ ul{
     list-style-type: none;
 }
 /* main section */
+.header{
+    background-color: var(--color--white);
+    
+}
 
 .hero-title{
     color: var(--color--brand);
@@ -120,6 +124,9 @@ p{
 }
 
 /* nav */
+.footer{
+    background-color: var(--color--brand--dark);
+}
 .link{
     color: var(--color--brand--dark);
     text-decoration: none;
