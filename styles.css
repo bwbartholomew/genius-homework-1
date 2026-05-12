@@ -61,7 +61,6 @@ ul{
     background-color: var(--color--white);
     
 }
-
 .hero-title{
     color: var(--color--brand);
     font-family: 'Play', sans-serif;
@@ -76,6 +75,7 @@ h1, h2{
 .main-button{
     color:var(--color--white);
     background-color: var(--color--brand);
+    font-family: inherit;
     font-weight: 600;
 border-radius: 32px;
    font-size: 18px;
