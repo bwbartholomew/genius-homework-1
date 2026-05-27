@@ -307,7 +307,6 @@ padding: 0;
     width: 44px;
     height: 44px;
     flex-shrink: 0;
-    padding: 0;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -375,13 +374,10 @@ padding: 0;
     flex-direction: column;
     gap: 16px;
 }
-.address-icons{
+.footer-icons{
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-.footer-icons{
-    flex-direction: row;
 }
     
 .link{
