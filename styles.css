@@ -47,52 +47,149 @@
     --color--white: #FFFFFF;
 
 }
+*{
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
+    background-color: var(--color--white) ;
 }
 ul{
     list-style-type: none;
 }
-/* main section */
-.header{
-    background-color: var(--color--white);
-    
+.container{
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
+/* all section */
+.section-title .accent {
+    color: var(--color--brand);
+}
+
+/* section title */
+.section-title {
+    font-family: 'Play', sans-serif;
+    color: var(--color--brand--dark);
+    font-weight: 700;
+    font-size: 64px;
+}
+.centered{
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+
+/* header */
+
+.header {
+    background-color: var(--color--white);
+
+}
+.header-container{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.header-nav{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 240px;
+}
+.header-menu{
+    display: flex;
+    gap: 56px; 
+    flex-grow: 1;
+}
+
+/* main section */
+
+.hero-section{
+    background-image: url('./imagesbeauty/hero-background.png');
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
 .hero-title{
+    width: 529px;
     color: var(--color--brand);
     font-family: 'Play', sans-serif;
      font-weight: 700;
     font-size: 140px;
     line-height: 0.8;
     text-align: left;
+    margin: 0 0 40px 0;
+    
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
 }
 h1, h2{
     font-family: 'Play';
 }
 .main-button{
+    display: flex;
+    width: 219px;
+    height: 53px;
     color:var(--color--white);
     background-color: var(--color--brand);
     font-family: inherit;
     font-weight: 600;
-border-radius: 32px;
+   border-radius: 32px;
    font-size: 18px;
    border: 2px solid var(--color--brand);
-   cursor: pointer;
+   flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+   gap: 10px;
+   padding: 16px 32px;
+margin-bottom: 14px;
 }
 .main-button:hover{
     color: var(--color--brand--dark);
     background-color: transparent;
 }
 .advice{
+    width: 238px;
+    height: 36px;
     font-size: 12px;
+    margin-bottom: 166px;
 }
 .cosmetics{
     font-size: 18px;
+    margin-bottom: 16px;
 }
+
 /* section information */
+
+.information-container{
+    display: flex;
+    margin-bottom: 375px;
+    gap: 40px;
+}
+.information-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .beautyzone {
     font-weight: 600;
 }
@@ -100,33 +197,89 @@ p{
     font-size: 22px;
     color: var(--color--brand--dark);
 }
-/* all section */
-.section-title .accent {
-    color: var(--color--brand);
-}
-/* section title */
-.section-title{
-    font-family: 'Play', sans-serif;
-    color: var(--color--brand--dark);
-    font-weight: 700;
-    font-size: 64px;
-}
+
+
 /* whywe section */
+.whywe-list{
+display: flex;
+gap: 56px;
+margin-bottom: 96px;
+}
+.whywe-card{
+    width: 316px;
+    border: 1px solid black;
+    border-radius: 32px;
+    padding: 24px 32px;
+}
+
 .article-text{
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
 }
 /* procedures section */
+
+.procedures-container{
+}
+.procedures-list{
+ display: flex;
+ gap: 16px;
+ margin-bottom: 96px;
+ 
+}
+.procedures-card{
+    gap: 16px;
+    height: 456px;
+    margin-bottom: 139px;
+}
+
+
 .procedures-text{
     color: var(--color--white);
     font-size: 22px;
     line-height: 1.2;
+    background-color: aquamarine;
+    text-align: end;
+}
+
+/* contact section */
+.contact-container{
+    display: flex;
+    margin-bottom: 96px;
 }
 
 /* nav */
 .footer{
     background-color: var(--color--brand--dark);
 }
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 186px;
+}
+.footer-logo{
+    display: flex;
+}
+.footer-address{
+    display: flex;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-policy{
+    display: flex;
+    flex-direction: column;
+}
+    
 .link{
     color: var(--color--brand--dark);
     text-decoration: none;
@@ -138,6 +291,7 @@ p{
 .link2{
     color:var(--color--white);
     font-size: 16px;
+    font-style: normal;
     text-decoration: none;
 }
 .address-link{
