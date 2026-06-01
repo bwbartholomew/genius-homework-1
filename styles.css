@@ -1,43 +1,43 @@
-/* roboto-regular - latin */
+/* roboto-regular - cyrillic_latin */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v51-latin-regular.woff2') format('woff2');
+    src: url('./fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* roboto-600 - latin */
+/* roboto-600 - cyrillic_latin */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/roboto-v51-latin-600.woff2') format('woff2');
+    src: url('./fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* play-regular - latin */
+/* play-regular - cyrillic_latin */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Play';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+    src: url('./fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* play-700 - latin */
+/* play-700 - cyrillic_latin */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+    src: url('./fonts/play-v21-cyrillic_latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* basic color  */
@@ -72,6 +72,7 @@ body{
 }
 ul{
     list-style-type: none;
+    padding-left: 0;
 }
 .container{
     max-width: 1288px;
@@ -92,6 +93,7 @@ ul{
     color: var(--color--brand--dark);
     font-weight: 700;
     font-size: 64px;
+    line-height: 1.16;
     margin-bottom: 40px;
 }
 .centered{
@@ -107,25 +109,25 @@ ul{
 }
 .header-container{
     display: flex;
-    flex-grow: 1;
     align-items: center;
 }
 .header-nav{
     display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 240px;
-        margin: 0 auto;
+        width: 100%;
 }
 .header-menu{
     display: flex;
     gap: 56px; 
-    flex-grow: 1;
 }
 .header-icons{
     display: flex;
     flex-direction: row;
     gap: 40px;
+}
+.header-icon{
+    display: flex;
 }
 
 /* main section */
@@ -151,6 +153,7 @@ ul{
 }
 .hero-container{
     display: flex;
+    padding-left: 106px;
     flex-direction: column;
 }
 h1, h2{
@@ -203,15 +206,29 @@ margin-bottom: 14px;
     display: flex;
     flex-direction: column;
 }
-/* .image-information{
-} */
+.image-information{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 499px;
+    width: 100%;
+
+}
 .images-info{
     width: 335px;
      height: 328px;
     border-radius: 50%;
 }
+.images-info.before{
+    align-self: flex-start;
+}
+.images-info.after{
+    align-self: flex-end;
+}
+
 .information-text{
     margin-bottom: 40px;
+    width: 709px;
 }
 .beautyzone {
     font-weight: 600;
@@ -370,13 +387,29 @@ padding: 0;
 }
 .address-info{
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    flex-grow: 1;
     gap: 16px;
+}
+.footer-contacts{
+    display: flex;
+    flex-grow: 1;
+    gap: 16px;
+    flex-direction: column;
+}
+.footer-social-media{
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
 }
 .footer-icons{
     display: flex;
+    fill: var(--color--white);
     flex-direction: row;
+    align-items: flex-start;
     gap: 30px;
 }
     
