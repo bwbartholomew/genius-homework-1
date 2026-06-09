@@ -117,7 +117,9 @@ ul{
     width: 100%;
     padding: 32px 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.25));
+    backdrop-filter: blur(10px);
 }
+
 .header-container{
     display: flex;
     align-items: center;
@@ -221,9 +223,10 @@ h1, h2{
 .image-information{
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: 40px;
-    max-width: 499px;
-    width: 100%;
+    width: 499px;
+    
 
 }
 .images-info{
@@ -313,7 +316,20 @@ p{
 /* whywe section */
 
 .whywe-section{
+    position: relative;
     padding: 88px 0 48px 0;
+}
+.whywe-section::before{
+    position: absolute;
+    top: -150px;
+    left: 200px; 
+    background-image: url(./imagesbeauty/background-whywe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1850px;
+    height: 1785px;
+    z-index: -1;
+    content:'';
 }
 .whywe-list{
 display: flex;
@@ -325,11 +341,12 @@ padding: 0;
 .whywe-card{
     width: 316px;
     height: 181px;
-    border: 1px solid black; 
     border-radius: 32px;
+    background-color: var(--color--white);
     padding: 24px 32px;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
 }
+
 .whywe-icons{
     display: block;
     box-sizing: border-box;
@@ -346,7 +363,7 @@ padding: 0;
     text-align: center;
 }
 
-/* procedures section */
+/* /* procedures section */
 
 .procedures-section{
     padding: 48px 0;
@@ -415,21 +432,24 @@ padding: 0;
 
 .contact-section{
     padding: 48px 0 96px 0;
+    margin: 0 auto;
 }
 
 .contact-container{
     display: flex;
     gap: 32px;
-    width: 1060px;
+    justify-content: center;
 }
 .contact-map{
     border-radius: 32px;
 
 }
-.contact-form{
+.form-button{
+
 }
 .contact-forma{
     width: 424px;
+    height: 482px;
     background-color: var(--color--brand--dark);
     box-sizing: border-box;
     padding: 48px 56px;
@@ -492,7 +512,6 @@ padding: 0;
     height: 152px;
     bottom: 0;
      right: 0;
-   left: 1310px;
     content: '';
 }
 .address-contacts{
@@ -579,11 +598,9 @@ padding: 0;
 .modal{
     position: relative;
     width: 724px;
-    height: 682px;
     padding: 42px 144px;
     background-color: var(--color--brand--dark);
     border-radius: 48px;
-    overflow: auto;
 }
 .modal-btn-close{
    position: absolute;
@@ -652,6 +669,7 @@ padding: 0;
     font-weight: 400;
     font-size: 12px;
     color: var(--color-secondary-light);
+    text-align: center;
 }
 .form-link{
     color: var(--color-secondary-light);
